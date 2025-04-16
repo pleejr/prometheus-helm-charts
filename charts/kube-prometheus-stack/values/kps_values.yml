@@ -1,6 +1,3 @@
-crds:
-  enabled: true
-
 fullnameOverride: prometheus
 
 defaultRules:
