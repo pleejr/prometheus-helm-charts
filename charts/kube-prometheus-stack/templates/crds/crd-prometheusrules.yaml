@@ -1,3 +1,4 @@
+{{- if .Values.crds.enabled }}
 # https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/v0.81.0/example/prometheus-operator-crd/monitoring.coreos.com_prometheusrules.yaml
 ---
 apiVersion: apiextensions.k8s.io/v1
@@ -160,3 +161,5 @@ spec:
         type: object
     served: true
     storage: true
+
+{{- end }}
